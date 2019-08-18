@@ -144,12 +144,12 @@ const gameStart = {
         //this.player.setBounce(0.2);
         this.player.setSize(330, 250, 10);
         this.player.setScale(0.7);
-        /*this.anims.create({
+        this.anims.create({
             key: 'run',
             frames: this.anims.generateFrameNumbers('user', { start: 0, end: 3 }),
             frameRate: 10,
             repeat: -1
-        });*/
+        });
         this.physics.add.collider(this.player, this.footer);
         this.player.anims.play('run', true);
     },
